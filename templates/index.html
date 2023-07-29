@@ -1,0 +1,1578 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "css/bootstrap.rtl.min.css" %}>
+    <link rel="stylesheet" href={% static "css/bootstrap-icon.css" %}>
+    <link rel="stylesheet" href={% static "css/owl.carousel.min.css" %}>
+    <link rel="stylesheet" href= {% static "css/owl.theme.default.min.css" %}>
+    <link rel="stylesheet" href={% static "css/story.css" %}>
+    <link rel="stylesheet" href={% static "style.css" %}>
+    <title>آی کالا</title>
+  </head>
+  <body>
+    <header class="pb-1 pb-md-0">
+      <section class="d-inine-block w-100 bg-white py-2">
+        <div class="container-xxl">
+          <div class="row align-items-center">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-3">
+              <div class="logo-box">
+                <img src={% static "img/logo.png" %} alt="">
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-7 col-sm-10 col-9">
+              <div class="search-form-site">
+                <form action="" class="w-100 position-relative overflow-hidden p-0">
+                  <input type="text" placeholder="جستجو" name="" class="w-100 h-100 border-0 rounded py-0 m-0" required>
+                  <button type="submit" class="position-absolute top-0 end-0 border-0 h-100 m-1 fs-4">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-4 col-6 d-none d-md-inline-block">
+              <div class="text-end position-relative d-flex justify-content-end align-items-center">
+                <a href="#" class="position-relative border rounded-8 ps-5 text-center me-3 py-2 pe-3 text-dark opacity-75 d-inline-block">
+                  <i class="bi bi-box-arrow-in-left top-0 fs-3 pt-1 ps-2
+                                position-absolute start-0 "></i>
+                  <span>ورود | ثبت نام</span>
+                </a>
+                <span class="d-inline-block pt-1">
+                  <a href="#" class="text-dark">
+                    <i class="bi bi-basket fs-3 opacity-75"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header-section">
+        <div class="container-xxl">
+          <div class="row align-items-center">
+            <div class="col-md-8 d-none d-md-block">
+              <div class="menu-box">
+                <ul class="main-menu">
+                  <li>
+                    <a href="#">دسته بندی کالا ها</a>
+                    <ul>
+                      <li>
+                        <a href="#">کالای دیجیتال</a>
+                      </li>
+                      <li>
+                        <a href="#">موبایل</a>
+                      </li>
+                      <li>
+                        <a href="#">خانه و آشپزخانه</a>
+                      </li>
+                      <li>
+                        <a href="#">مد و پوشاک</a>
+                      </li>
+                      <li>
+                        <a href="#">سوپرمارکت</a>
+                      </li>
+                      <li>
+                        <a href="#">زیبایی و سلامت</a>
+                      </li>
+                      <li>
+                        <a href="#">محصولات بومی</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">سوپرمارکت</a>
+                  </li>
+                  <li>
+                    <a href="#">پرفروش ترین ها</a>
+                  </li>
+                  <li>
+                    <a href="#">پیشنهادات</a>
+                  </li>
+                  <li>
+                    <a href="#">سوالی دارید؟</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-4">
+              <div class="responsive-menu-box">
+                <ul class="p-0 m-0">
+                  <li class="d-inline-block d-md-none">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample_2" aria-controls="offcanvasExample_2" class="text-dark d-inline-block px-2">
+                      <i class="bi bi-list"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-8 d-md-none">
+              <div class="text-end position-relative d-flex justify-content-end align-items-center">
+                <a href="#" class="position-relative border rounded-8 ps-3 text-center me-3 py-2 pe-3 text-dark opacity-75 d-inline-block">ورود | ثبت نام</a>
+                <span class="d-inline-block pt-1">
+                  <a href="#" class="text-dark">
+                    <i class="bi bi-basket fs-3 opacity-75"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample_2" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">قالب آی‌کالا طراحی توسط سئو نود</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body responsive-menu-body">
+          <ul>
+            <li>
+              <a href="#">دسته بندی کالا ها</a>
+              <ul>
+                <li>
+                  <a href="#">کالای دیجیتال</a>
+                </li>
+                <li>
+                  <a href="#">موبایل</a>
+                </li>
+                <li>
+                  <a href="#">خانه و آشپزخانه</a>
+                </li>
+                <li>
+                  <a href="#">مد و پوشاک</a>
+                </li>
+                <li>
+                  <a href="#">سوپرمارکت</a>
+                </li>
+                <li>
+                  <a href="#">زیبایی و سلامت</a>
+                </li>
+                <li>
+                  <a href="#">محصولات بومی</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">سوپرمارکت</a>
+            </li>
+            <li>
+              <a href="#">پرفروش ترین ها</a>
+            </li>
+            <li>
+              <a href="#">پیشنهادات</a>
+            </li>
+            <li>
+              <a href="#">سوالی دارید؟</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="border-top mt-2"></div>
+    <div id="stories" class="storiesWrapper mt-4 text-center"></div>
+    <section class="d-inline-block w-100 my-2">
+      <div class="container-fluid px-0">
+        <div class="index-slider">
+          <div class="index-slider-wrap owl-carousel owl-theme">
+            <div>
+              <img src={% static "img/s2-min.png" %} alt="">
+            </div>
+            <div>
+              <img src={% static "img/Archive-Product/1788-min.png" %} alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-inline-block w-100 my-2">
+      <div class="rounded">
+        <div class="container-xxl">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="bg-light p-3 p-sm-4">
+                <div class="row align-items-center">
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                    <span class="d-flex fs-4 align-items-center justify-content-center justify-content-lg-between">
+                      <span>
+                        <i class="bi bi-basket pe-2"></i> شگفت انگیر سوپر مارکـــــــــت </span>
+                      <span class="radius-r d-inline-block ms-4"></span>
+                    </span>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="d-flex justify-content-center justify-content-lg-end SuperMarket align-items-center">
+                      <div class="mx-1 d-none d-md-block">
+                        <a href="#" class="text-dark">
+                          <div class="bg-white p-2 rounded-circle position-relative">
+                            <img src={% static "img/SuperMarket/111470538.webp" %} alt="" class="rounded-circle">
+                            <span class="radius-r radius-r-min d-inline-block bg-danger position-absolute start-0 bottom-0 text-light rounded-pill">20%</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mx-1 d-none d-md-block">
+                        <a href="#" class="text-dark">
+                          <div class="bg-white p-2 rounded-circle position-relative">
+                            <img src={% static "img/SuperMarket/121718401.webp" %} alt="" class="rounded-circle">
+                            <span class="radius-r radius-r-min d-inline-block bg-danger position-absolute start-0 bottom-0 text-light rounded-pill">20%</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mx-1 d-none d-md-block">
+                        <a href="#" class="text-dark">
+                          <div class="bg-white p-2 rounded-circle position-relative">
+                            <img src={% static "img/SuperMarket/2439525.webp" %} alt="" class="rounded-circle">
+                            <span class="radius-r radius-r-min d-inline-block bg-danger position-absolute start-0 bottom-0 text-light rounded-pill">20%</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mx-1 d-none d-md-block">
+                        <a href="#" class="text-dark">
+                          <div class="bg-white p-2 rounded-circle position-relative">
+                            <img src={% static "img/SuperMarket/2710.webp" %} alt="" class="rounded-circle">
+                            <span class="radius-r radius-r-min d-inline-block bg-danger position-absolute start-0 bottom-0 text-light rounded-pill">20%</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="mx-1">
+                        <a href="#" class="text-dark">
+                          <span class="d-inline-block bg-white py-3 px-5 text-center rounded"> بیش از 120 کالا </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-inline-block w-100 my-2">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="holder-pr bg-light p-2 pb-0 pb-md-0 pb-md-2 rounded position-relative">
+              <div class="rounded-before position-absolute"></div>
+              <div class="row align-items-center row-reverse-md">
+                <div class="col-md-3 py-4 py-md-0">
+                  <div class="text-center">
+                    <span class="fs-2 d-inline-block pe-1 pe-md-0 d-md-block text-secondary"> جدیدترین </span>
+                    <span class="fs-3 d-inline-block pe-1 pe-md-0 d-md-block text-secondary"> محصـــولات </span>
+                    <span class="d-inline-block pe-1 pe-md-0 d-md-block text-light"></span>
+                    <div class="d-block"></div>
+                    <a href="#" class="opacity-75 d-inline-block py-3 px-4 mt-3 mt-md-5 text-center fs-12 text-secondary border border-secondary rounded mt-3">
+                      <i class="bi bi-basket"></i> مشاهده فروشگاه ما </a>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="products-slider owl-carousel owl-theme">
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/115287511-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کفش مخصوص پیاده روی و دویدن مدل AIR FORCE-SA-TO غیر اصل</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">190.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder"></div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/119365584-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کفش مخصوص پیاده روی مردانه مدل گاردن کد 4893-2</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">259.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder"></div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/120749743-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">ماشین لباسشویی پاکشوما مدل TFU-84401 ظرفیت 8 کیلوگرم </h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">9.750.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder"></div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/l4.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت مردانه کد S179</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>120.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">90.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/l2.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت آستین کوتاه مردانه زیزیپ کد 1320T</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>120.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">90.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="3100"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-inline-block w-100 my-2">
+      <div class="container-xxl">
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-4 col-md-2 text-center my-3">
+            <a href="#" class="text-dark">
+              <div class="Pic_Cat_Item bg-light rounded-circle mx-auto">
+                <img src={% static "img/PicCategory/6161119.webp" %} alt="" class="d-table mx-auto">
+              </div>
+              <span class="d-block mt-3 opacity-50 fs-12"> خانه و آشپرخانه </span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 text-center my-3">
+            <a href="#" class="text-dark">
+              <div class="Pic_Cat_Item bg-light rounded-circle mx-auto">
+                <img src={% static "img/PicCategory/698730.webp" %} alt="" class="d-table mx-auto">
+              </div>
+              <span class="d-block mt-3 opacity-50 fs-12"> ابزار و صنعت </span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 text-center my-3">
+            <a href="#" class="text-dark">
+              <div class="Pic_Cat_Item bg-light rounded-circle mx-auto">
+                <img src={% static "img/PicCategory/160928.webp" %} alt="" class="d-table mx-auto">
+              </div>
+              <span class="d-block mt-3 opacity-50 fs-12"> مد و پوشاک </span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 text-center my-3">
+            <a href="#" class="text-dark">
+              <div class="Pic_Cat_Item bg-light rounded-circle mx-auto">
+                <img src={% static "img/PicCategory/1.webp" %} alt="" class="d-table mx-auto">
+              </div>
+              <span class="d-block mt-3 opacity-50 fs-12"> زیبایی و سلامت </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-inline-block w-100 my-2">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="holder-pr bg-red-d p-2 pb-0 pb-md-0 pb-md-2 rounded">
+              <div class="row align-items-center row-reverse-md">
+                <div class="col-md-3 py-4 py-md-0">
+                  <div class="text-center">
+                    <span class="display-4 d-inline-block pe-1 pe-md-0 d-md-block text-light"> پیشنهاد </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> شگــفــت </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> انگیز </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> موبایل </span>
+                    <div class="d-block"></div>
+                    <a href="#" class="opacity-75 d-inline-block py-3 px-4 mt-3 mt-md-5 text-center fs-12 text-white border border-white rounded mt-3">مشاهده همه</a>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="products-slider owl-carousel owl-theme">
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/114024246-600x600.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل سامسونگ مدل Galaxy S10 SM-G973F/DS دو سیم کارت ظرفیت 128 گیگابایت</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>27.000.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">24.300.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/115598446-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل سامسونگ مدل Galaxy A51 SM-A515F/DSN دو سیم کارت ظرفیت 128گیگابایت</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>6.450.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">5.805.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="4000"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/113542184-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل اپل مدل iPhone 11 Pro Max A2220 دو سیم‌ کارت ظرفیت 256 گیگابایت </h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>39.000.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">35.100.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/120301366-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل آنر مدل 9X STK-LX1 دوسیم کارت ظرفیت 128 گیگابایت </h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>5.259.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">4.730.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="1000"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/119342069-768x768.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل نوکیا مدل 2.3 TA-1206 دو سیم کارت ظرفیت 32 گیگابایت </h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>2.100.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">1.890.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-inline-block w-100 my-2">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="border rounded bg-white p-3 p-md-4">
+              <div class="row justify-content-center Index-Categories">
+                <div class="col-sm-6 col-md-4 col-lg-3 my-4">
+                  <div class="bg-4 position-relative">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <span class="d-block opacity-75 fs-5">تی شرت</span>
+                        <span class="d-block opacity-50 fs-13">پرفروش ترین</span>
+                      </div>
+                    </div>
+                    <div class="row position-relative">
+                      <div class="Index-Categories-Divider position-absolute w-50 h-50"></div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/l1.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/l2.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/l3.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/l4.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 my-4">
+                  <div class="bg-4 position-relative">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <span class="d-block opacity-75 fs-5"> گوشی موبایل</span>
+                        <span class="d-block opacity-50 fs-13">پرفروش ترین</span>
+                      </div>
+                    </div>
+                    <div class="row position-relative">
+                      <div class="Index-Categories-Divider position-absolute w-50 h-50"></div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/m1.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/m2.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/m3.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/m4.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 my-4">
+                  <div class="bg-4 position-relative">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <span class="d-block opacity-75 fs-5">هنزفری و ایرفون</span>
+                        <span class="d-block opacity-50 fs-13">پرفروش ترین</span>
+                      </div>
+                    </div>
+                    <div class="row position-relative">
+                      <div class="Index-Categories-Divider position-absolute w-50 h-50"></div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/h1.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/h2.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/h3.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/h4.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 my-4 d-inline-block d-md-none d-lg-inline-block">
+                  <div class="bg-4 position-relative">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <span class="d-block opacity-75 fs-5">کفش ورزشی مردانه</span>
+                        <span class="d-block opacity-50 fs-13">پرفروش ترین</span>
+                      </div>
+                    </div>
+                    <div class="row position-relative">
+                      <div class="Index-Categories-Divider position-absolute w-50 h-50"></div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/3b54d66b31468160ca6ac5c49d00eda78f1c5a05_1654346266.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/fafa155591918cc3a548319ea5ae7eaaca227024_1652105866.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/115287511-300x300.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="position-relative">
+                          <figure class="p-2 p-md-3 m-0">
+                            <img src={% static "img/Product/119365584-300x300.jpg" %} alt="">
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-inline-block w-100 my-2">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="holder-pr bg-gre-d p-2 pb-0 pb-md-0 pb-md-2 rounded">
+              <div class="row align-items-center row-reverse-md">
+                <div class="col-md-3 py-4 py-md-0">
+                  <div class="text-center">
+                    <span class="display-4 d-inline-block pe-1 pe-md-0 d-md-block text-light"> پیشنهاد </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> شگــفــت </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> انگیز </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> استایل </span>
+                    <div class="d-block"></div>
+                    <a href="#" class="opacity-75 d-inline-block py-3 px-4 mt-3 mt-md-5 text-center fs-12 text-white border border-white rounded mt-3">مشاهده همه</a>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="products-slider owl-carousel owl-theme">
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/l1.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت انارچاپ طرح پاندا مدل T01008</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>120.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">90.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="3420"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/l2.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت آستین کوتاه مردانه زیزیپ کد 1320T</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>120.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">90.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/l3.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت مردانه طرح مارشملو کد 34349 </h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>240.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">180.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="1860"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/l4.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت مردانه کد S179</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>120.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">90.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/Product/l2.jpg" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت آستین کوتاه مردانه زیزیپ کد 1320T</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>120.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">90.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="3100"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-inline-block w-100 my-2">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="holder-pr border p-2 rounded-8">
+              <div class="d-flex justify-content-between align-items-center py-3 border-bottom  mb-3">
+                <span class="d-inline-block opacity-75 ps-2">
+                  </i> تی شرت </span>
+                <a href="#" class="text-dark opacity-50 fs-12 pe-2">مشاهده همه</a>
+              </div>
+              <div class="products-slider-category owl-carousel owl-theme">
+                <div class="product-item bg-white p-3 rounded">
+                  <img src={% static "img/Product/l1.jpg" %} alt="" class="my-4 d-table mx-auto">
+                  <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت انارچاپ طرح پاندا مدل T01008 </h4>
+                  <div class="prices-pr">
+                    <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                      <span class="d-inine-block fs-13 opacity-50 mx-1">
+                        <del>120.000</del>
+                      </span>
+                      <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                      <span class="d-inine-block opacity-75 mx-1">90.000</span>
+                      <span class="d-inine-block px-2 opacity-50">تومان</span>
+                    </div>
+                  </div>
+                  <div class="timer-main-holder">
+                    <div class="timer d-flex justify-content-center" data-minutes-left="3420"></div>
+                  </div>
+                  <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                </div>
+                <div class="product-item bg-white p-3 rounded">
+                  <img src={% static "img/Product/l2.jpg" %} alt="" class="my-4 d-table mx-auto">
+                  <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت آستین کوتاه مردانه زیزیپ کد 1320T</h4>
+                  <div class="prices-pr">
+                    <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                      <span class="d-inine-block fs-13 opacity-50 mx-1">
+                        <del>120.000</del>
+                      </span>
+                      <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                      <span class="d-inine-block opacity-75 mx-1">90.000</span>
+                      <span class="d-inine-block px-2 opacity-50">تومان</span>
+                    </div>
+                  </div>
+                  <div class="timer-main-holder">
+                    <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
+                  </div>
+                  <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                </div>
+                <div class="product-item bg-white p-3 rounded">
+                  <img src={% static "img/Product/l3.jpg" %} alt="" class="my-4 d-table mx-auto">
+                  <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت مردانه طرح مارشملو کد 34349 </h4>
+                  <div class="prices-pr">
+                    <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                      <span class="d-inine-block fs-13 opacity-50 mx-1">
+                        <del>240.000</del>
+                      </span>
+                      <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                      <span class="d-inine-block opacity-75 mx-1">180.000</span>
+                      <span class="d-inine-block px-2 opacity-50">تومان</span>
+                    </div>
+                  </div>
+                  <div class="timer-main-holder">
+                    <div class="timer d-flex justify-content-center" data-minutes-left="1860"></div>
+                  </div>
+                  <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                </div>
+                <div class="product-item bg-white p-3 rounded">
+                  <img src={% static "img/Product/l4.jpg" %} alt="" class="my-4 d-table mx-auto">
+                  <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت مردانه کد S179</h4>
+                  <div class="prices-pr">
+                    <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                      <span class="d-inine-block fs-13 opacity-50 mx-1">
+                        <del>120.000</del>
+                      </span>
+                      <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                      <span class="d-inine-block opacity-75 mx-1">90.000</span>
+                      <span class="d-inine-block px-2 opacity-50">تومان</span>
+                    </div>
+                  </div>
+                  <div class="timer-main-holder">
+                    <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
+                  </div>
+                  <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                </div>
+                <div class="product-item bg-white p-3 rounded">
+                  <img src={% static "img/Product/l2.jpg" %} alt="" class="my-4 d-table mx-auto">
+                  <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت آستین کوتاه مردانه زیزیپ کد 1320T</h4>
+                  <div class="prices-pr">
+                    <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                      <span class="d-inine-block fs-13 opacity-50 mx-1">
+                        <del>120.000</del>
+                      </span>
+                      <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                      <span class="d-inine-block opacity-75 mx-1">90.000</span>
+                      <span class="d-inine-block px-2 opacity-50">تومان</span>
+                    </div>
+                  </div>
+                  <div class="timer-main-holder">
+                    <div class="timer d-flex justify-content-center" data-minutes-left="3100"></div>
+                  </div>
+                  <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-inline-block w-100 my-2">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="border rounded bg-white p-3 p-md-4">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <span class="d-block pb-3 pt-2">
+                    <i class="bi bi-bag text-primary ms-2"></i>
+                    <span class="opacity-75">محصولات منتخب</span>
+                  </span>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                  <div class="row-product border-bottom py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/b.webp" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 1 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کوله پشتی مدل PRX-408 </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-product border-bottom py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/64.jpg" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 2 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">پایه نگهدارنده گوشی موبایل و تبلت یونیورسال مدل 270 درجه </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-product py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/90.jpg" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 3 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کیس کامپیوتر گیم مکس مدل G561 FRGB </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                  <div class="row-product border-bottom py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/94.webp" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 4 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کرم ضدآفتاب و ضد لک بی رنگ لافارر مدل SPF 30 مناسب پوست های چرب حجم 40 میلی لیتر </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-product border-bottom py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/6.webp" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 5 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">انگشتر مدل رینگ ساده 124 رنگ مشکی </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-product py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/35.webp" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 6 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">هندزفری بلوتوثی مدل inpods 12</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                  <div class="row-product border-bottom py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/kf2.webp" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 7 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کفش پیاده روی مردانه نیو بالانس مدل 992JJJJound
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-product border-bottom py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/kf.webp" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 8 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کفش طبیعت گردی مردانه مدل PLUS.JORDAN.GH رنگ قرمز</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-product py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/121340934-300x300.jpg" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 9 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">لپ تاپ 15 اینچی ایسوس مدل ZenBook UX533FTC-X</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                  <div class="row-product border-bottom py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/119365584-300x300.jpg" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 10 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کفش مخصوص پیاده روی مردانه مدل گاردن کد 4893-2</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-product border-bottom py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/120301366-300x300.jpg" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 11 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل آنر مدل 9X STK-LX1 دوسیم کارت ظرفیت 128 گیگابایت </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row-product py-3">
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <a href="#">
+                          <div>
+                            <img src={% static "img/Product/115598446-300x300.jpg" %} alt="" class="d-table mx-auto">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-1 text-center">
+                        <span class="d-block text-secondary fs-3 Shabnam-e"> 12 </span>
+                      </div>
+                      <div class="col-6">
+                        <div>
+                          <div class="product-item h-auto">
+                            <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل سامسونگ مدل Galaxy A51 SM-A515F/DSN دو سیم کارت ظرفیت 128گیگابایت </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-inline-block w-100 my-2">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="holder-pr bg-green-d p-2 pb-0 pb-md-0 pb-md-2 rounded">
+              <div class="row align-items-center row-reverse-md">
+                <div class="col-md-3 py-4 py-md-0">
+                  <div class="text-center">
+                    <span class="display-4 d-inline-block pe-1 pe-md-0 d-md-block text-light"> پیشنهاد </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> شگــفــت </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> انگیز </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> سوپر مارکــــت </span>
+                    <div class="d-block"></div>
+                    <a href="#" class="opacity-75 d-inline-block py-3 px-4 mt-3 mt-md-5 text-center fs-12 text-white border border-white rounded mt-3">مشاهده همه</a>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="products-slider owl-carousel owl-theme">
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/SuperMarket/k1.webp" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">خیارشور اصالت - 1.5 کیلوگرم </h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>60.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">54.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/SuperMarket/k2.webp" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">زیتون شور اصالت مدل معمولی مقدار 700 گرم</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>80.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">72.000</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="4000"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/SuperMarket/k3.webp" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">ترشی مخلوط زیتون با فلفل دلمه اصالت مقدار 680 گرم</h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>95.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">85.588</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                    <div class="product-item bg-white p-3 rounded">
+                      <img src={% static "img/SuperMarket/k4.webp" %} alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">ترشی فلفل اصالت مقدار 620 گرم </h4>
+                      <div class="prices-pr">
+                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
+                          <span class="d-inine-block fs-13 opacity-50 mx-1">
+                            <del>35.000</del>
+                          </span>
+                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                          <span class="d-inine-block opacity-75 mx-1">31.500</span>
+                          <span class="d-inine-block px-2 opacity-50">تومان</span>
+                        </div>
+                      </div>
+                      <div class="timer-main-holder">
+                        <div class="timer d-flex justify-content-center" data-minutes-left="1000"></div>
+                      </div>
+                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-inline-block w-100 my-2">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="holder-pr border p-2 rounded-8">
+              <div class="d-flex justify-content-between align-items-center py-3 border-bottom  mb-3">
+                <span class="d-inline-block opacity-75 ps-2">
+                  </i>لپ تاپ </span>
+                <a href="#" class="text-dark opacity-50 fs-12 pe-2">مشاهده همه</a>
+              </div>
+              <div class="products-slider-category owl-carousel owl-theme">
+                <div class="product-item bg-white p-3 rounded">
+                  <img src={% static "img/Product/121340934-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">
+                  <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">لپ تاپ 15 اینچی ایسوس مدل ZenBook UX533FTC-X</h4>
+                  <div class="prices-pr">
+                    <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
+                    <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                      <span class="d-inine-block opacity-75 mx-1">46.500.000</span>
+                      <span class="d-inine-block px-2 opacity-50">تومان</span>
+                    </div>
+                  </div>
+                  <div class="timer-main-holder"></div>
+                  <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                </div>
+                <div class="product-item bg-white p-3 rounded">
+                  <img src={% static "img/Product/121155962-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">
+                  <h4 class="fs-13 lh-lg opacity-75 overflow-hidden"> لپ تاپ 15 اینچی اچ پی مدل OMEN 15-DC1088 G3-B </h4>
+                  <div class="prices-pr">
+                    <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
+                    <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                      <span class="d-inine-block opacity-75 mx-1">41.290.000</span>
+                      <span class="d-inine-block px-2 opacity-50">تومان</span>
+                    </div>
+                  </div>
+                  <div class="timer-main-holder"></div>
+                  <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                </div>
+                <div class="product-item bg-white p-3 rounded">
+                  <img src={% static "img/Product/lp1.webp" %} alt="" class="my-4 d-table mx-auto">
+                  <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">لپ تاپ 15.6 اینچ ایسوس مدل VivoBook R565EP-EJ629</h4>
+                  <div class="prices-pr">
+                    <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
+                    <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                      <span class="d-inine-block opacity-75 mx-1">37.880.000</span>
+                      <span class="d-inine-block px-2 opacity-50">تومان</span>
+                    </div>
+                  </div>
+                  <div class="timer-main-holder"></div>
+                  <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                </div>
+                <div class="product-item bg-white p-3 rounded">
+                  <img src={% static "img/Product/lp2.webp" %} alt="" class="my-4 d-table mx-auto">
+                  <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">لپ تاپ 15 اینچی لنوو مدل IdeaPad 5-I5 8GB 1TB128GB MX450</h4>
+                  <div class="prices-pr">
+                    <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
+                    <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                      <span class="d-inine-block opacity-75 mx-1">19.000.000</span>
+                      <span class="d-inine-block px-2 opacity-50">تومان</span>
+                    </div>
+                  </div>
+                  <div class="timer-main-holder"></div>
+                  <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                </div>
+                <div class="product-item bg-white p-3 rounded">
+                  <img src={% static "img/Product/lp3.webp" %} alt="" class="my-4 d-table mx-auto">
+                  <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">لپ تاپ 14.0 اینچی ایسوس مدل VivoBook E410MA-BV1517</h4>
+                  <div class="prices-pr">
+                    <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
+                    <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
+                      <span class="d-inine-block opacity-75 mx-1">25.740.000</span>
+                      <span class="d-inine-block px-2 opacity-50">تومان</span>
+                    </div>
+                  </div>
+                  <div class="timer-main-holder"></div>
+                  <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-4">
+      <div class="container-xxl">
+        <div class="row align-items-center">
+          <div class="col-sm-8">
+            <div class="opacity-50 pb-4 Shabnam-e"> پشتیبانی 24 ساعته - 09028468446 | 7 روز هفته </div>
+          </div>
+          <div class="col-sm-4 pb-4 text-end">
+            <span class="px-4 py-2 opacity-75 border fs-12 rounded scroll-top"> بازگشت به بالا </span>
+          </div>
+        </div>
+        <div class="row justify-content-center justify-content-sm-start justify-content-md-center py-4">
+          <div class="col-6 col-sm-3 col-md-2 my-2 my-md-0">
+            <div class="text-center">
+              <img src={% static "img/Services/support.svg" %} alt="">
+              <span class="opacity-75 pt-2 d-block fs-13"> پشتیبانی 24 ساعته </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 my-2 my-md-0">
+            <div class="text-center">
+              <img src={% static "img/Services/cash-on-delivery.svg" %} alt="">
+              <span class="opacity-75 pt-2 d-block fs-13"> پرداخت در محل </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 my-2 my-md-0">
+            <div class="text-center">
+              <img src={% static "img/Services/original-products.svg" %} alt="">
+              <span class="opacity-75 pt-2 d-block fs-13"> ضمانت اصالت </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 my-2 my-md-0">
+            <div class="text-center">
+              <img src={% static "img/Services/express-delivery.svg" %} alt="">
+              <span class="opacity-75 pt-2 d-block fs-13"> تحویل اکسپرس </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 my-2 my-md-0">
+            <div class="text-center">
+              <img src={% static "img/Services/days-return.svg" %} alt="">
+              <span class="opacity-75 pt-2 d-block fs-13"> بازگشت کالا </span>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center py-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center text-md-start my-3 my-sm-0">
+            <span class="d-block fs-6 pb-2 opacity-75">خدمات مشتریان</span>
+            <div class="footer-menu">
+              <ul>
+                <li>
+                  <a href="#">سئوالات متداول</a>
+                </li>
+                <li>
+                  <a href="#">شرایط استفاده</a>
+                </li>
+                <li>
+                  <a href="#">روش های بازگشت کالا</a>
+                </li>
+                <li>
+                  <a href="#">حریم کاربران</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center text-md-start my-3 my-sm-0">
+            <span class="d-block fs-6 pb-2 opacity-75">درباره ما</span>
+            <div class="footer-menu">
+              <ul>
+                <li>
+                  <a href="#">تماس با ما</a>
+                </li>
+                <li>
+                  <a href="#">اطلاعات فروشگاه</a>
+                </li>
+                <li>
+                  <a href="#">خدمات عمده</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center text-md-start my-3 my-sm-0">
+            <span class="d-block fs-6 pb-3 opacity-75">سایر خدمات</span>
+            <div class="footer-menu">
+              <ul>
+                <li>
+                  <a href="#">فروشنده شوید</a>
+                </li>
+                <li>
+                  <a href="#">پایگاه دانش</a>
+                </li>
+                <li>
+                  <a href="#">همکاران</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-4">
+            <div class="footer-apps">
+              <div class="row justify-content-between pt-3 pt-md-0">
+                <div class="col-lg-4 col-md-12 col-sm-4 col-4 my-1 text-center">
+                  <a href="#">
+                    <img src={% static "img/coffe-bazzar.svg" %} alt="">
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-4 col-4 my-1 text-center">
+                  <a href="#">
+                    <img src={% static "img/sib-app.svg" %} alt="">
+                  </a>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-4 col-4 my-1 text-center">
+                  <a href="#">
+                    <img src={% static "img/google-play.svg" %} alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center pb-4">
+          <div class="col-md-8 col-lg-7 border-top border-light pt-4">
+            <div class="footer-textbox">
+              <h1>ســـــایـــــت آموزشـــی ســئو نود</h1>
+              <p>قالب آی کالا ( مشابه دیجی کالا ) توسط گروه آموزشی سئو نود ، یکی از مجموعه های بزرگ و فعال در زمینه ارائه دوره های آموزشی آنلاین طراحی سایت و برنامه نویسی ، طراحی شده و جهت استفاده کاربران عزیز در دو نسخه اچ تی ام ال و همچنین تم وردپرس ارائه شده است . قابلیت شخصی سازی این قالب بسیار بالا بوده و به بهترین شکل کدنویسی شده است تا سرعت بسیار بالایی داشته و واکنشگرایی فوق العاده کاربرپسند داشته باشد .</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 pt-4 pt-md-0">
+            <div class="d-flex justify-content-center footer-logos">
+              <figure class="m-0 p-3 border rounded mx-1">
+                <img src={% static "img/Namad/kasbokar.png" %} alt="">
+              </figure>
+              <figure class="m-0 p-3 border rounded mx-1">
+                <img src={% static "img/Namad/logo (1).png" %} alt="">
+              </figure>
+              <figure class="m-0 p-3 border rounded mx-1">
+                <img src={% static "img/Namad/rezi.png" %} alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center border-top">
+          <div class="col-sm-6">
+            <div class="opacity-50 fs-12 text-center text-sm-start pt-4">
+              <span class="lh-lg"> تمامی حقوق این قالب محفوظ است </span>
+            </div>
+          </div>
+          <div class="col-sm-6 text-center text-sm-end">
+            <div class="opacity-50 fs-12 pt-4">
+              <ul class="p-0 m-0">
+                <li class="d-inline-block">
+                  <a href="#" class="text-dark mx-1">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="text-dark mx-1">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src={% static "js/jQuery.js" %}></script>
+    <script src={% static "js/bootstrap.bundle.min.js" %}></script>
+    <script src={% static "js/owl.carousel.min.js" %}></script>
+    <script src={% static "js/jquery.simple.timer.js" %}></script>
+    <script src={% static "js/script.js" %}></script>
+    <script src={% static "js/story.min.js" %}></script>
+    <script src={% static "js/index.js" %}></script>
+
+  </body>
+</html>
