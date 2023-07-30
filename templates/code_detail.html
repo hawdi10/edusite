@@ -1,0 +1,25 @@
+<!-- code_detail.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Detail</title>
+</head>
+<body>
+    <h2>{{ code.code_title }}</h2>
+    <p>{{ code.text }}</p>
+    <!-- نمایش کامنت‌های کد -->
+    <ul>
+        {% for comment in code.codecomment_set.all %}
+            <li>{{ comment.text }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- فرم ثبت کامنت کد -->
+    <form method="post">
+        {% csrf_token %}
+        {{ code_comment_form.as_p }}
+        <button type="submit">Submit Comment</button>
+    </form>
+</body>
+</html>

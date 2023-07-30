@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app1.apps.App1Config',
-    'user'
+    'user',
+    'social_django'
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '1009569692719-2t85088qvce5t8h6pjmuesmj3evcggpf.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = ['hadiasadi7812@gmail.com']
