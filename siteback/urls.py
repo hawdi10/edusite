@@ -16,13 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from django.conf import settings
+from django.conf.urls.static import static
 from app1 import views
 
 urlpatterns = [
-    path('login/', views.login_view, name='login'),
-    path('signup/', views.signup_view, name='signup'),
-    path('logout/', views.logout_view, name='logout'),
-    path('auth/google/', views.google_auth_view, name='google_auth'),
+    # path('login/', views.login_view, name='login'),
+    # path('signup/', views.signup_view, name='signup'),
+    # path('logout/', views.logout_view, name='logout'),
+    # path('auth/google/', views.google_auth_view, name='google_auth'),
+    path('admin/', admin.site.urls),
+    path('panel_admin/', views.admin_panel),
+
 ]
 
+if settings.DEBUG:
+     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

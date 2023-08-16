@@ -19,3 +19,21 @@ class CodeCommentForm(forms.ModelForm):
     class Meta:
         model = CodeComment
         fields = ['text']
+
+#فرم ثبت نام
+class register_form(forms.Form):
+    username = forms.CharField(
+        label="نام کاربری",
+        widget=forms.TextInput(attrs={'class': 'form-control',
+                                      'placeholder': "نام و نام خانوادگی"})
+    )
+    password = forms.CharField(
+        label="پسورد",
+        widget=forms.TextInput(attrs={'class': 'form-control',
+                                      'placeholder': "پسورد"})
+    )
+    confirm = forms.CharField(
+        label="تکرار پسورد",
+        widget=forms.TextInput(attrs={'class': 'form-control',
+                                      'placeholder': "تکرار پسورد"})
+    )
