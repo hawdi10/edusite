@@ -27,7 +27,10 @@ urlpatterns = [
     # path('auth/google/', views.google_auth_view, name='google_auth'),
     path('admin/', admin.site.urls),
     path('panel_admin/', views.admin_panel),
-
+    path('panel_admin_code/', views.admin_panel_code, name='panel_admin_code'),
+    path('panel_admin_video/', views.admin_panel_video, name='panel_admin_video'),
+    path('panel_admin_add_code/', views.admin_panel_add_code, name='panel_admin_add_code'),
+    path('panel_admin_add_video/', views.admin_panel_add_video, name='panel_admin_add_video'),
 ]
 
 if settings.DEBUG:
