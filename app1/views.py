@@ -1,14 +1,17 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Video, Code
+from .models import Video, Code, Top
 from django.views import View
 from django.contrib.auth import login, logout
-from . import forms
+from app1 import forms
+from django.utils.text import slugify
 
 def admin_panel(request):
     return render(request, 'admin_panel.html')
 
 def index(request):
-    return render(request, 'index.html')
+    video = Video.objects.all()
+    top = Top.objects.all()
+    return render(request, 'index.html', context={"video": video, "top":top })
 
 def admin_panel_code(request):
     codes = Code.objects.all()
@@ -28,21 +31,20 @@ def admin_panel_add_code(request):
 def admin_panel_add_video(request):
     return render(request, 'admin_panel_add_video.html')
 
-def post(self, request):
-    add_code = forms.data_form(request.POST)
-    if add_code.is_valid():
-        code_title_data = add_code.cleaned_data.get("code_title")
-        code_file_data = add_code.cleaned_data.get("code_file")
-        code_price_data = add_code.cleaned_data.get("code_price")
-        code_final_price_data = add_code.cleaned_data.get("code_final_price")
-        code_detail_data = add_code.cleaned_data.get("code_detail")
-        code_description_data = add_code.cleaned_data.get("code_description")
-        final_code_data = Code(code_title=code_title_data,
-                                code_file=code_file_data,
-                                code_price=code_price_data,
-                                code_final_price=code_final_price_data,
-                                code_detail=code_detail_data,
-                                code_description=code_description_data
-            )
-        final_code_data.save()
-        return redirect("panel_admin_code")
+# def create_code(request):
+#     if request.method == 'POST':
+#         form = CodeForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('')
+#     else:
+#         form = CodeForm()
+#     return render(request, 'admin_panel_add_code.html', {'form': form})
+
+def adminslug(request,slug):
+    admin_slug = Code.objects.filter(id=slug)
+    return render(request,'admin_panel_detail.html',context=admin_slug)
+
+def test(request):
+    return render(request,'admin_panel_detail.html')
+

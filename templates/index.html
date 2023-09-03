@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={% static "css/bootstrap.rtl.min.css" %}>
-    <link rel="stylesheet" href={% static "css/bootstrap-icon.css" %}>
-    <link rel="stylesheet" href={% static "css/owl.carousel.min.css" %}>
-    <link rel="stylesheet" href= {% static "css/owl.theme.default.min.css" %}>
-    <link rel="stylesheet" href={% static "css/story.css" %}>
-    <link rel="stylesheet" href={% static "style.css" %}>
+    <link rel="stylesheet" href="{% static "css/bootstrap.rtl.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/bootstrap-icon.css" %}">
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/story.css" %}">
+    <link rel="stylesheet" href="{% static "style.css" %}">
     <title>Green</title>
   </head>
   <body>
@@ -20,8 +20,9 @@
           <div class="row align-items-center">
             <div class="col-lg-1 col-md-1 col-sm-2 col-3">
               <div class="logo-box">
-                <img src={% static "img/logo.png" %} alt="">
+                <img src="{% static "img/v1-copy2.png" %}" alt="">
               </div>
+
             </div>
             <div class="col-lg-5 col-md-7 col-sm-10 col-9">
               <div class="search-form-site">
@@ -174,20 +175,25 @@
     </header>
     <div class="border-top mt-2"></div>
     <!-- <div id="stories" class="storiesWrapper mt-4 text-center"></div> -->
+
     <section class="d-inline-block w-100 my-2">
+
       <div class="container-fluid px-0">
+
         <div class="index-slider">
+
           <div class="index-slider-wrap owl-carousel owl-theme">
-            <div>
-              <img src={% static "img/s2-min.png" %} alt="">
-            </div>
-            <div>
-              <img src={% static "img/Archive-Product/1788-min.png" %} alt="">
-            </div>
+            {% for foo in top %}
+              <img src="{{ foo.top_image.banner.url }}" alt="">
+            {% endfor top %}
           </div>
+
         </div>
+
       </div>
+
     </section>
+
     <!-- <section class="d-inline-block w-100 my-2">
        <div class="rounded">
         <div class="container-xxl">
@@ -260,98 +266,102 @@
                 <div class="col-md-3 py-4 py-md-0">
                   <div class="text-center">
                     <span class="fs-2 d-inline-block pe-1 pe-md-0 d-md-block text-secondary"> جدیدترین </span>
-                    <span class="fs-3 d-inline-block pe-1 pe-md-0 d-md-block text-secondary"> آموزش ها</span>
+                    <span class="fs-3 d-inline-block pe-1 pe-md-0 d-md-block text-secondary"> ویدیو های آموزشی</span>
                     <span class="d-inline-block pe-1 pe-md-0 d-md-block text-light"></span>
                     <div class="d-block"></div>
                     <a href="#" class="opacity-75 d-inline-block py-3 px-4 mt-3 mt-md-5 text-center fs-12 text-secondary border border-secondary rounded mt-3">
                       <i class="bi bi-basket"></i> مشاهده آموزش ها </a>
                   </div>
                 </div>
+
                 <div class="col-md-9">
                   <div class="products-slider owl-carousel owl-theme">
+                      {% for foo in video %}
                     <div class="product-item bg-white p-3 rounded">
-                      <img src={% static "img/Product/115287511-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">
-                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کفش مخصوص پیاده روی و دویدن مدل AIR FORCE-SA-TO غیر اصل</h4>
+                      <img src="{{ foo.img.url }}" alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">{{ foo.video_title }}</h4>
                       <div class="prices-pr">
                         <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
                         <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
-                          <span class="d-inine-block opacity-75 mx-1">190.000</span>
+                          <span class="d-inine-block opacity-75 mx-1">{{ foo.video_price }}</span>
                           <span class="d-inine-block px-2 opacity-50">تومان</span>
                         </div>
                       </div>
+
                       <div class="timer-main-holder"></div>
                       <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
                     </div>
-                    <div class="product-item bg-white p-3 rounded">
-                       <img src={% static "img/Product/119365584-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">
-                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کفش مخصوص پیاده روی مردانه مدل گاردن کد 4893-2</h4>
-                      <div class="prices-pr">
-                        <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
-                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
-                          <span class="d-inine-block opacity-75 mx-1">259.000</span>
-                          <span class="d-inine-block px-2 opacity-50">تومان</span>
-                        </div>
-                      </div>
-                      <div class="timer-main-holder"></div>
-                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
-                    </div>
-                    <div class="product-item bg-white p-3 rounded">
-                      <img src="img/Product/120749743-300x300.jpg" alt="" class="my-4 d-table mx-auto">
-                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">ماشین لباسشویی پاکشوما مدل TFU-84401 ظرفیت 8 کیلوگرم </h4>
-                      <div class="prices-pr">
-                        <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>
-                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
-                          <span class="d-inine-block opacity-75 mx-1">9.750.000</span>
-                          <span class="d-inine-block px-2 opacity-50">تومان</span>
-                        </div>
-                      </div>
-                      <div class="timer-main-holder"></div>
-                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
-                    </div>
-                    <div class="product-item bg-white p-3 rounded">
-                      <img src="img/Product/l4.jpg" alt="" class="my-4 d-table mx-auto">
-                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت مردانه کد S179</h4>
-                      <div class="prices-pr">
-                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
-                          <span class="d-inine-block fs-13 opacity-50 mx-1">
-                            <del>120.000</del>
-                          </span>
-                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
-                          <span class="d-inine-block opacity-75 mx-1">90.000</span>
-                          <span class="d-inine-block px-2 opacity-50">تومان</span>
-                        </div>
-                      </div>
-                      <div class="timer-main-holder">
-                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
-                      </div>
-                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
-                    </div>
-                    <div class="product-item bg-white p-3 rounded">
-                      <img src="img/Product/l2.jpg" alt="" class="my-4 d-table mx-auto">
-                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت آستین کوتاه مردانه زیزیپ کد 1320T</h4>
-                      <div class="prices-pr">
-                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
-                          <span class="d-inine-block fs-13 opacity-50 mx-1">
-                            <del>120.000</del>
-                          </span>
-                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
-                          <span class="d-inine-block opacity-75 mx-1">90.000</span>
-                          <span class="d-inine-block px-2 opacity-50">تومان</span>
-                        </div>
-                      </div>
-                      <div class="timer-main-holder">
-                        <div class="timer d-flex justify-content-center" data-minutes-left="3100"></div>
-                      </div>
-                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                      {% endfor video %}
+{#                    <div class="product-item bg-white p-3 rounded">#}
+{#                       <img src={% static "img/Product/119365584-300x300.jpg" %} alt="" class="my-4 d-table mx-auto">#}
+{#                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">کفش مخصوص پیاده روی مردانه مدل گاردن کد 4893-2</h4>#}
+{#                      <div class="prices-pr">#}
+{#                        <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>#}
+{#                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">#}
+{#                          <span class="d-inine-block opacity-75 mx-1">259.000</span>#}
+{#                          <span class="d-inine-block px-2 opacity-50">تومان</span>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <div class="timer-main-holder"></div>#}
+{#                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>#}
+{#                    </div>#}
+{#                    <div class="product-item bg-white p-3 rounded">#}
+{#                      <img src="img/Product/120749743-300x300.jpg" alt="" class="my-4 d-table mx-auto">#}
+{#                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">ماشین لباسشویی پاکشوما مدل TFU-84401 ظرفیت 8 کیلوگرم </h4>#}
+{#                      <div class="prices-pr">#}
+{#                        <div class="d-flex justify-content-center align-items-center Shabnam-e"></div>#}
+{#                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">#}
+{#                          <span class="d-inine-block opacity-75 mx-1">9.750.000</span>#}
+{#                          <span class="d-inine-block px-2 opacity-50">تومان</span>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <div class="timer-main-holder"></div>#}
+{#                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>#}
+{#                    </div>#}
+{#                    <div class="product-item bg-white p-3 rounded">#}
+{#                      <img src="img/Product/l4.jpg" alt="" class="my-4 d-table mx-auto">#}
+{#                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت مردانه کد S179</h4>#}
+{#                      <div class="prices-pr">#}
+{#                        <div class="d-flex justify-content-center align-items-center Shabnam-e">#}
+{#                          <span class="d-inine-block fs-13 opacity-50 mx-1">#}
+{#                            <del>120.000</del>#}
+{#                          </span>#}
+{#                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>#}
+{#                        </div>#}
+{#                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">#}
+{#                          <span class="d-inine-block opacity-75 mx-1">90.000</span>#}
+{#                          <span class="d-inine-block px-2 opacity-50">تومان</span>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <div class="timer-main-holder">#}
+{#                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>#}
+{#                      </div>#}
+{#                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>#}
+{#                    </div>#}
+{#                    <div class="product-item bg-white p-3 rounded">#}
+{#                      <img src="img/Product/l2.jpg" alt="" class="my-4 d-table mx-auto">#}
+{#                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">تی شرت آستین کوتاه مردانه زیزیپ کد 1320T</h4>#}
+{#                      <div class="prices-pr">#}
+{#                        <div class="d-flex justify-content-center align-items-center Shabnam-e">#}
+{#                          <span class="d-inine-block fs-13 opacity-50 mx-1">#}
+{#                            <del>120.000</del>#}
+{#                          </span>#}
+{#                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">25%</span>#}
+{#                        </div>#}
+{#                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">#}
+{#                          <span class="d-inine-block opacity-75 mx-1">90.000</span>#}
+{#                          <span class="d-inine-block px-2 opacity-50">تومان</span>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <div class="timer-main-holder">#}
+{#                        <div class="timer d-flex justify-content-center" data-minutes-left="3100"></div>#}
+{#                      </div>#}
+{#                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>#}
+{#                    </div>#}
+{#                  </div>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
           </div>
         </div>
       </div>
@@ -402,117 +412,119 @@
               <div class="row align-items-center row-reverse-md">
                 <div class="col-md-3 py-4 py-md-0">
                   <div class="text-center">
-                    <span class="display-4 d-inline-block pe-1 pe-md-0 d-md-block text-light"> پیشنهاد </span>
-                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> شگــفــت </span>
-                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> انگیز </span>
-                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> موبایل </span>
+                    <span class="display-4 d-inline-block pe-1 pe-md-0 d-md-block text-light"> جدیدترین </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> آموزش های </span>
+                    <span class="display-6 d-inline-block pe-1 pe-md-0 d-md-block text-light"> متنی </span>
+
                     <div class="d-block"></div>
                     <a href="#" class="opacity-75 d-inline-block py-3 px-4 mt-3 mt-md-5 text-center fs-12 text-white border border-white rounded mt-3">مشاهده همه</a>
                   </div>
                 </div>
+
                 <div class="col-md-9">
                   <div class="products-slider owl-carousel owl-theme">
                     <div class="product-item bg-white p-3 rounded">
-                      <img src="img/Product/114024246-600x600.jpg" alt="" class="my-4 d-table mx-auto">
-                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل سامسونگ مدل Galaxy S10 SM-G973F/DS دو سیم کارت ظرفیت 128 گیگابایت</h4>
+                      <img src="" alt="" class="my-4 d-table mx-auto">
+                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden"></h4>
                       <div class="prices-pr">
                         <div class="d-flex justify-content-center align-items-center Shabnam-e">
                           <span class="d-inine-block fs-13 opacity-50 mx-1">
-                            <del>27.000.000</del>
+                            <del></del>
                           </span>
                           <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
-                          <span class="d-inine-block opacity-75 mx-1">24.300.000</span>
-                          <span class="d-inine-block px-2 opacity-50">تومان</span>
-                        </div>
-                      </div>
-                      <div class="timer-main-holder">
-                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
-                      </div>
-                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
-                    </div>
-                    <div class="product-item bg-white p-3 rounded">
-                      <img src="img/Product/115598446-300x300.jpg" alt="" class="my-4 d-table mx-auto">
-                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل سامسونگ مدل Galaxy A51 SM-A515F/DSN دو سیم کارت ظرفیت 128گیگابایت</h4>
-                      <div class="prices-pr">
-                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
-                          <span class="d-inine-block fs-13 opacity-50 mx-1">
-                            <del>6.450.000</del>
-                          </span>
-                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
-                          <span class="d-inine-block opacity-75 mx-1">5.805.000</span>
-                          <span class="d-inine-block px-2 opacity-50">تومان</span>
-                        </div>
-                      </div>
-                      <div class="timer-main-holder">
-                        <div class="timer d-flex justify-content-center" data-minutes-left="4000"></div>
-                      </div>
-                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
-                    </div>
-                    <div class="product-item bg-white p-3 rounded">
-                      <img src="img/Product/113542184-300x300.jpg" alt="" class="my-4 d-table mx-auto">
-                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل اپل مدل iPhone 11 Pro Max A2220 دو سیم‌ کارت ظرفیت 256 گیگابایت </h4>
-                      <div class="prices-pr">
-                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
-                          <span class="d-inine-block fs-13 opacity-50 mx-1">
-                            <del>39.000.000</del>
-                          </span>
-                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
-                          <span class="d-inine-block opacity-75 mx-1">35.100.000</span>
-                          <span class="d-inine-block px-2 opacity-50">تومان</span>
-                        </div>
-                      </div>
-                      <div class="timer-main-holder">
-                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
-                      </div>
-                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
-                    </div>
-                    <div class="product-item bg-white p-3 rounded">
-                      <img src="img/Product/120301366-300x300.jpg" alt="" class="my-4 d-table mx-auto">
-                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل آنر مدل 9X STK-LX1 دوسیم کارت ظرفیت 128 گیگابایت </h4>
-                      <div class="prices-pr">
-                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
-                          <span class="d-inine-block fs-13 opacity-50 mx-1">
-                            <del>5.259.000</del>
-                          </span>
-                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
-                          <span class="d-inine-block opacity-75 mx-1">4.730.000</span>
-                          <span class="d-inine-block px-2 opacity-50">تومان</span>
-                        </div>
-                      </div>
-                      <div class="timer-main-holder">
-                        <div class="timer d-flex justify-content-center" data-minutes-left="1000"></div>
-                      </div>
-                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
-                    </div>
-                    <div class="product-item bg-white p-3 rounded">
-                      <img src="img/Product/119342069-768x768.jpg" alt="" class="my-4 d-table mx-auto">
-                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل نوکیا مدل 2.3 TA-1206 دو سیم کارت ظرفیت 32 گیگابایت </h4>
-                      <div class="prices-pr">
-                        <div class="d-flex justify-content-center align-items-center Shabnam-e">
-                          <span class="d-inine-block fs-13 opacity-50 mx-1">
-                            <del>2.100.000</del>
-                          </span>
-                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">
-                          <span class="d-inine-block opacity-75 mx-1">1.890.000</span>
-                          <span class="d-inine-block px-2 opacity-50">تومان</span>
-                        </div>
-                      </div>
-                      <div class="timer-main-holder">
-                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>
-                      </div>
-                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>
-                    </div>
-                  </div>
+
+{#                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">#}
+{#                          <span class="d-inine-block opacity-75 mx-1">24.300.000</span>#}
+{#                          <span class="d-inine-block px-2 opacity-50">تومان</span>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <div class="timer-main-holder">#}
+{#                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>#}
+{#                      </div>#}
+{#                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>#}
+{#                    </div>#}
+{#                    <div class="product-item bg-white p-3 rounded">#}
+{#                      <img src="img/Product/115598446-300x300.jpg" alt="" class="my-4 d-table mx-auto">#}
+{#                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل سامسونگ مدل Galaxy A51 SM-A515F/DSN دو سیم کارت ظرفیت 128گیگابایت</h4>#}
+{#                      <div class="prices-pr">#}
+{#                        <div class="d-flex justify-content-center align-items-center Shabnam-e">#}
+{#                          <span class="d-inine-block fs-13 opacity-50 mx-1">#}
+{#                            <del>6.450.000</del>#}
+{#                          </span>#}
+{#                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>#}
+{#                        </div>#}
+{#                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">#}
+{#                          <span class="d-inine-block opacity-75 mx-1">5.805.000</span>#}
+{#                          <span class="d-inine-block px-2 opacity-50">تومان</span>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <div class="timer-main-holder">#}
+{#                        <div class="timer d-flex justify-content-center" data-minutes-left="4000"></div>#}
+{#                      </div>#}
+{#                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>#}
+{#                    </div>#}
+{#                    <div class="product-item bg-white p-3 rounded">#}
+{#                      <img src="img/Product/113542184-300x300.jpg" alt="" class="my-4 d-table mx-auto">#}
+{#                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل اپل مدل iPhone 11 Pro Max A2220 دو سیم‌ کارت ظرفیت 256 گیگابایت </h4>#}
+{#                      <div class="prices-pr">#}
+{#                        <div class="d-flex justify-content-center align-items-center Shabnam-e">#}
+{#                          <span class="d-inine-block fs-13 opacity-50 mx-1">#}
+{#                            <del>39.000.000</del>#}
+{#                          </span>#}
+{#                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>#}
+{#                        </div>#}
+{#                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">#}
+{#                          <span class="d-inine-block opacity-75 mx-1">35.100.000</span>#}
+{#                          <span class="d-inine-block px-2 opacity-50">تومان</span>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <div class="timer-main-holder">#}
+{#                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>#}
+{#                      </div>#}
+{#                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>#}
+{#                    </div>#}
+{#                    <div class="product-item bg-white p-3 rounded">#}
+{#                      <img src="img/Product/120301366-300x300.jpg" alt="" class="my-4 d-table mx-auto">#}
+{#                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل آنر مدل 9X STK-LX1 دوسیم کارت ظرفیت 128 گیگابایت </h4>#}
+{#                      <div class="prices-pr">#}
+{#                        <div class="d-flex justify-content-center align-items-center Shabnam-e">#}
+{#                          <span class="d-inine-block fs-13 opacity-50 mx-1">#}
+{#                            <del>5.259.000</del>#}
+{#                          </span>#}
+{#                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>#}
+{#                        </div>#}
+{#                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">#}
+{#                          <span class="d-inine-block opacity-75 mx-1">4.730.000</span>#}
+{#                          <span class="d-inine-block px-2 opacity-50">تومان</span>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <div class="timer-main-holder">#}
+{#                        <div class="timer d-flex justify-content-center" data-minutes-left="1000"></div>#}
+{#                      </div>#}
+{#                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>#}
+{#                    </div>#}
+{#                    <div class="product-item bg-white p-3 rounded">#}
+{#                      <img src="img/Product/119342069-768x768.jpg" alt="" class="my-4 d-table mx-auto">#}
+{#                      <h4 class="fs-13 lh-lg opacity-75 overflow-hidden">گوشی موبایل نوکیا مدل 2.3 TA-1206 دو سیم کارت ظرفیت 32 گیگابایت </h4>#}
+{#                      <div class="prices-pr">#}
+{#                        <div class="d-flex justify-content-center align-items-center Shabnam-e">#}
+{#                          <span class="d-inine-block fs-13 opacity-50 mx-1">#}
+{#                            <del>2.100.000</del>#}
+{#                          </span>#}
+{#                          <span class="d-inine-block px-2 py-1 bg-red-d text-white rounded">10%</span>#}
+{#                        </div>#}
+{#                        <div class="d-flex justify-content-center align-items-center mt-1 Shabnam-e">#}
+{#                          <span class="d-inine-block opacity-75 mx-1">1.890.000</span>#}
+{#                          <span class="d-inine-block px-2 opacity-50">تومان</span>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <div class="timer-main-holder">#}
+{#                        <div class="timer d-flex justify-content-center" data-minutes-left="2430"></div>#}
+{#                      </div>#}
+{#                      <a href="#" class="opacity-75 d-block py-3 text-center fs-12 text-dark border rounded mt-3">افزودن به سبد</a>#}
+{#                    </div>#}
+{#                  </div>#}
                 </div>
               </div>
             </div>
@@ -1567,13 +1579,13 @@
         </div>
       </div>
     </footer>
-    <script src="js/jQuery.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.simple.timer.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/story.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="{% static "js/jQuery.js" %}"></script>
+    <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "js/owl.carousel.min.js" %}"></script>
+    <script src="{% static "js/jquery.simple.timer.js" %}"></script>
+    <script src="{% static "js/script.js" %}"></script>
+    <script src="{% static "js/story.min.js" %}"></script>
+    <script src="{% static "js/index.js" %}"></script>
     <script>
       var currentSkin = getCurrentSkin();
       var stories = window.Zuck(document.querySelector('#stories'), {
