@@ -19,10 +19,11 @@
         <div class="container-xxl">
           <div class="row align-items-center">
             <div class="col-lg-1 col-md-1 col-sm-2 col-3">
+                <a href="{% url 'index' %}">
               <div class="logo-box">
-                <img src="{% static "img/v1-copy2.png" %}" alt="">
+                <img src="{% static "img/v1-copy2.png" %}" alt="v1-copy2.png">
               </div>
-
+                </a>
             </div>
             <div class="col-lg-5 col-md-7 col-sm-10 col-9">
               <div class="search-form-site">
@@ -36,7 +37,7 @@
             </div>
             <div class="col-lg-6 col-md-4 col-6 d-none d-md-inline-block">
               <div class="text-end position-relative d-flex justify-content-end align-items-center">
-                <a href="#" class="position-relative border rounded-8 ps-5 text-center me-3 py-2 pe-3 text-dark opacity-75 d-inline-block bg-green-d">
+                <a href="{% url 'signup' %}" class="position-relative border rounded-8 ps-5 text-center me-3 py-2 pe-3 text-dark opacity-75 d-inline-block bg-green-d">
                   <i class="bi bi-box-arrow-in-left top-0 fs-3 pt-1 ps-2
                                 position-absolute start-0 "></i>
                   <span>ورود | ثبت نام</span>
@@ -60,29 +61,20 @@
                   <li>
                     <a href="#">صفحه اصلی</a>
                     <!-- دراپ دان -->
-                    <!-- <ul>
+                    <ul>
                       <li>
-                        <a href="#">کالای دیجیتال</a>
+                        <a href="#">منبع کد</a>
                       </li>
                       <li>
-                        <a href="#">موبایل</a>
+                        <a href="#">آموزش متنی</a>
                       </li>
                       <li>
-                        <a href="#">خانه و آشپزخانه</a>
+                        <a href="#">آموزش ویدیویی</a>
                       </li>
                       <li>
-                        <a href="#">مد و پوشاک</a>
+                        <a href="#">درباره ما</a>
                       </li>
-                      <li>
-                        <a href="#">سوپرمارکت</a>
-                      </li>
-                      <li>
-                        <a href="#">زیبایی و سلامت</a>
-                      </li>
-                      <li>
-                        <a href="#">محصولات بومی</a>
-                      </li>
-                    </ul> -->
+                    </ul>
                   </li>
                   <li>
                     <a href="#">منبع کد</a>

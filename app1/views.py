@@ -4,6 +4,8 @@ from django.views import View
 from django.contrib.auth import login, logout
 from app1 import forms
 from django.utils.text import slugify
+from django.views import View
+from siteback import urls
 
 def admin_panel(request):
     return render(request, 'admin_panel.html')
@@ -45,6 +47,12 @@ def adminslug(request,slug):
     admin_slug = Code.objects.filter(id=slug)
     return render(request,'admin_panel_detail.html',context=admin_slug)
 
+
 def test(request):
     return render(request,'admin_panel_detail.html')
 
+def signup(request):
+    return render(request, 'signup.html')
+
+def login(request):
+    return render(request, 'login.html')

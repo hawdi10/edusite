@@ -20,6 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from app1 import views
 
+
 urlpatterns = [
     # path('login/', views.login_view, name='login'),
     # path('signup/', views.signup_view, name='signup'),
@@ -33,6 +34,8 @@ urlpatterns = [
     path('panel_admin_add_code/', views.admin_panel_code, name='panel_admin_add_code'),
     path('panel_admin_add_video/', views.admin_panel_add_video, name='panel_admin_add_video'),
     path('test/', views.test),
+    path('login/', views.login, name='signin'),
+    path('signup/', views.signup, name='signup')
 ]
 
 if settings.DEBUG:

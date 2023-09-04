@@ -31,6 +31,26 @@
 from django import forms
 from .models import Video, Code
 
+from django import forms
+
+
+class register_form(forms.Form):
+    username = forms.CharField(
+        label="نام کاربری",
+        widget=forms.TextInput(attrs={'class': 'form-control',
+                                      'placeholder': "نام و نام خانوادگی"})
+    )
+    password = forms.CharField(
+        label="پسورد",
+        widget=forms.TextInput(attrs={'class': 'form-control',
+                                      'placeholder': "پسورد"})
+    )
+    confirm = forms.CharField(
+        label="تکرار پسورد",
+        widget=forms.TextInput(attrs={'class': 'form-control',
+                                      'placeholder': "تکرار پسورد"})
+    )
+
 class CodeForm(forms.ModelForm):
     class Meta:
         model = Code
