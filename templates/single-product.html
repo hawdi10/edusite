@@ -1,3 +1,4 @@
+{% extends 'index.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
@@ -11,9 +12,11 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>لپ تاپ 15.6 اینچی لنوو</title>
+
+    {% block title%}<title>{{ product.video_title }}</title>{% endblock title %}
   </head>
   <body>
+  {% block body %}
     <header>
       <section class="d-inine-block w-100 bg-white py-2">
         <div class="container-xxl">
@@ -264,7 +267,7 @@
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-sm-0 mb-md-4">
           <div>
-            <h1 class="fs-5 opacity-75">لپ تاپ 15.6 اینچی لنوو مدل IdeaPad 3 - 15ITL6 </h1>
+            <h1 class="fs-5 opacity-75">{{ product. }} </h1>
             <div class="position-relative mb-3">
               <span class="d-block w-50 border-top position-absolute top-50 end-0"></span>
               <span class="d-inline-block fs-12 opacity-50 bg-white pe-4 position-relative">IdeaPad 3 - 15ITL6</span>
@@ -636,6 +639,7 @@
         </div>
       </div>
     </div>
+  {% endblock body %}
     <footer class="py-4">
       <div class="container-xxl">
         <div class="row align-items-center">

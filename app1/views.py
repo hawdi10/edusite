@@ -56,3 +56,9 @@ def signup(request):
 
 def login(request):
     return render(request, 'login.html')
+
+def slug_video_view(request, slug):
+    product = get_object_or_404(Video, slug=slug)
+    return render(request, 'single-product(editedversion).html', {'product': product })
+
+

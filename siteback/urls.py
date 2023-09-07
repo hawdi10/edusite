@@ -35,7 +35,9 @@ urlpatterns = [
     path('panel_admin_add_video/', views.admin_panel_add_video, name='panel_admin_add_video'),
     path('test/', views.test),
     path('login/', views.login, name='signin'),
-    path('signup/', views.signup, name='signup')
+    path('signup/', views.signup, name='signup'),
+    path('<slug:slug>/', views.slug_video_view, name='single_product'),
+
 ]
 
 if settings.DEBUG:
